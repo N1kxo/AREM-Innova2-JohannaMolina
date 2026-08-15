@@ -1,13 +1,12 @@
 
 # Arquitectura Empresarial — Johanna Andrea Molina
 
-**Equipo:** Equipo9 · Nicolas Esteban Muñoz Sendoya, Juan David Orozco Rodriguez
+**Equipo:** Innova2 · Nicolas Esteban Muñoz Sendoya, Juan David Orozco Rodriguez
 **Curso:** Arquitectura Empresarial — Universidad de La Sabana
 
 ---
 
 ## 📌 En una frase
-
 
 
 [Ej: "Rediseñamos cómo Fundación Salud Viva conecta su app móvil, su ERP y su plataforma de telemedicina, para que la atención a pacientes sea más rápida y los datos clínicos queden protegidos."]
