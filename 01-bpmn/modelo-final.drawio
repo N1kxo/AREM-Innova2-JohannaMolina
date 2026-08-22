@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="BPMN - Caso PQRSF" id="0">
-    <mxGraphModel dx="2814" dy="1737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="750" math="0" shadow="0">
+    <mxGraphModel dx="4515" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="750" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -26,7 +26,7 @@
           <mxGeometry height="170" width="2910" x="10" y="160" as="geometry" />
         </mxCell>
         <mxCell id="n2" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar automáticamente el ticket en Unísabana Anexo" vertex="1">
-          <mxGeometry height="75" width="180" x="200" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="190" y="45" as="geometry" />
         </mxCell>
         <mxCell id="n19" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Enviar alerta automática (Teams/correo) a Gestor y Jefatura" vertex="1">
           <mxGeometry height="75" width="180" x="1450" y="45" as="geometry" />
@@ -41,16 +41,16 @@
           <mxGeometry height="30" width="60" x="1660" y="120" as="geometry" />
         </mxCell>
         <mxCell id="lane_gestor" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Gestor de Casos (Alexander)" vertex="1">
-          <mxGeometry height="170" width="2910" y="340" as="geometry" />
+          <mxGeometry height="170" width="2910" x="10" y="340" as="geometry" />
         </mxCell>
         <mxCell id="n3" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Revisar casos nuevos (diario)" vertex="1">
-          <mxGeometry height="75" width="180" x="420" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="417.5" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n4" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
           <mxGeometry height="75" width="75" x="640" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n6" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Clasificar caso (categoría, tema, subtema, tipo)" vertex="1">
-          <mxGeometry height="75" width="180" x="800" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="790" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n21" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;X&lt;/font&gt;" vertex="1">
           <mxGeometry height="75" width="75" x="1010" y="40" as="geometry" />
@@ -59,7 +59,7 @@
           <mxGeometry height="75" width="180" x="1240" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n10" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar respuesta en la base de datos (Excel Online)" vertex="1">
-          <mxGeometry height="75" width="180" x="1670" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="1670" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n11" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
           <mxGeometry height="75" width="75" x="1900" y="40" as="geometry" />
@@ -68,10 +68,10 @@
           <mxGeometry height="75" width="75" x="2110" y="40" as="geometry" />
         </mxCell>
         <mxCell id="n14" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado fuera de tiempo (afecta indicador 80%)" vertex="1">
-          <mxGeometry height="75" width="180" x="2320" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="2310" y="95" as="geometry" />
         </mxCell>
         <mxCell id="n15" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado a tiempo" vertex="1">
-          <mxGeometry height="75" width="180" x="2320" y="45" as="geometry" />
+          <mxGeometry height="75" width="180" x="2310" y="-22" as="geometry" />
         </mxCell>
         <mxCell id="n17" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b3;strokeColor=#d79b00;" value="Actualizar estado a Cerrado en Excel (punto crítico)" vertex="1">
           <mxGeometry height="75" width="180" x="2560" y="45" as="geometry" />
@@ -95,7 +95,7 @@
           <mxGeometry height="30" width="107.5" x="2093.75" y="130" as="geometry" />
         </mxCell>
         <mxCell id="lane_facultad" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Área / Facultad" vertex="1">
-          <mxGeometry height="170" width="2910" y="510" as="geometry" />
+          <mxGeometry height="170" width="2910" x="-30" y="510" as="geometry" />
         </mxCell>
         <mxCell id="n9" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Atender caso y elaborar respuesta" vertex="1">
           <mxGeometry height="75" width="180" x="1450" y="-30" as="geometry" />
@@ -104,7 +104,7 @@
           <mxGeometry height="40" width="40" x="1520" y="120" as="geometry" />
         </mxCell>
         <mxCell id="n12" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reabrir caso y gestionar nueva respuesta" vertex="1">
-          <mxGeometry height="75" width="160" x="1857.5" y="70" as="geometry" />
+          <mxGeometry height="75" width="160" x="1887.5" y="70" as="geometry" />
         </mxCell>
         <mxCell id="n5" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Solicitar información adicional al usuario o unidad" vertex="1">
           <mxGeometry height="75" width="160" x="597.5" y="57.5" as="geometry" />
