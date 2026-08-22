@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net">
   <diagram name="BPMN - Caso PQRSF" id="0">
-    <mxGraphModel dx="4515" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="750" math="0" shadow="0">
+    <mxGraphModel dx="5463" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="750" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="pool1" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f5f5f5;" value="Proceso: Gestión y Seguimiento de Casos PQRSF - Comuníquese con Nosotros" vertex="1">
+        <mxCell id="pool1" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f5f5f5;" value="" vertex="1">
           <mxGeometry height="710" width="2940" x="20" y="20" as="geometry" />
         </mxCell>
         <mxCell id="lane_solicitante" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Solicitante" vertex="1">
-          <mxGeometry height="170" width="2910" as="geometry" />
+          <mxGeometry height="170" width="2920" as="geometry" />
         </mxCell>
         <mxCell id="n1" parent="lane_solicitante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
           <mxGeometry height="50" width="50" x="80" y="65" as="geometry" />
@@ -23,7 +23,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lane_sistema" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Sistema (Unísabana Anexo / Excel Online + Power Automate)" vertex="1">
-          <mxGeometry height="170" width="2910" x="10" y="160" as="geometry" />
+          <mxGeometry height="170" width="2920" y="170" as="geometry" />
         </mxCell>
         <mxCell id="n2" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar automáticamente el ticket en Unísabana Anexo" vertex="1">
           <mxGeometry height="75" width="180" x="190" y="45" as="geometry" />
@@ -38,10 +38,10 @@
           <mxGeometry height="75" width="180" x="2560" y="45" as="geometry" />
         </mxCell>
         <mxCell id="KrMyWJA8VnLo7mf9UDX5-6" parent="lane_sistema" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Alerta enviada" vertex="1">
-          <mxGeometry height="30" width="60" x="1660" y="120" as="geometry" />
+          <mxGeometry height="30" width="60" x="1665" y="120" as="geometry" />
         </mxCell>
         <mxCell id="lane_gestor" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Gestor de Casos (Alexander)" vertex="1">
-          <mxGeometry height="170" width="2910" x="10" y="340" as="geometry" />
+          <mxGeometry height="170" width="2920" y="340" as="geometry" />
         </mxCell>
         <mxCell id="n3" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Revisar casos nuevos (diario)" vertex="1">
           <mxGeometry height="75" width="180" x="417.5" y="40" as="geometry" />
@@ -95,7 +95,7 @@
           <mxGeometry height="30" width="107.5" x="2093.75" y="130" as="geometry" />
         </mxCell>
         <mxCell id="lane_facultad" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Área / Facultad" vertex="1">
-          <mxGeometry height="170" width="2910" x="-30" y="510" as="geometry" />
+          <mxGeometry height="170" width="2920" y="510" as="geometry" />
         </mxCell>
         <mxCell id="n9" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Atender caso y elaborar respuesta" vertex="1">
           <mxGeometry height="75" width="180" x="1450" y="-30" as="geometry" />
@@ -188,6 +188,9 @@
         </mxCell>
         <mxCell id="e18_16" edge="1" parent="pool1" source="n18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n16" value="">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-11" parent="1" style="text;whiteSpace=wrap;html=1;rotation=-90;fontSize=18;align=center;" value="&lt;span style=&quot;font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255)); display: inline !important;&quot;&gt;Proceso: Gestión y Seguimiento de Casos PQRSF - Comuníquese con Nosotros&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="710" x="-355" y="355" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
