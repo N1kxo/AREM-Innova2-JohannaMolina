@@ -8,28 +8,30 @@ _Taller 1 - Modelado de Proceso del Cliente con BPMN_
 - Juan David Orozco Rodriguez (davidorozcoj1@gmail.com / DavidOrozcoJ)
 
 ## 🧠 Descripción general del trabajo
-El objetivo de esta entrega fue modelar en BPMN un proceso real del cliente asignado: la **Dirección de Servicio al Cliente / Contact Center de la Universidad de La Sabana**, específicamente el proceso de **gestión y seguimiento de casos PQRSF ("Comuníquese con Nosotros")**. La información se levantó en una reunión con la responsable del área, quien describió cómo se reciben, clasifican, atienden y cierran los casos hoy en día, y cuáles son los problemas que enfrenta el equipo con su herramienta actual (una base de datos en Excel).
+El objetivo de esta entrega fue modelar en BPMN un proceso real del cliente asignado: la **Dirección de Servicio al Cliente / Contact Center de la Universidad de La Sabana**, específicamente el proceso de **gestión y seguimiento de casos PQRSF ("Comuníquese con Nosotros")**. La información se levantó en una reunión con la responsable del área y se complementó con el análisis presentado en clase ("Arquitectura Empresarial para el Contact Center: Automatización, Trazabilidad y Control"), que identificó tres problemas centrales: falta de trazabilidad de cambios, ausencia de alertas de vencimiento y generación manual de reportes.
 
 ## 🔧 Proceso de desarrollo
-Se siguió la metodología de 5 pasos de la guía del taller:
+Se siguió la metodología de 5 pasos de la guía del taller, ajustada tras la retroalimentación de clase para alinear los carriles y la lógica de enrutamiento con el análisis presentado:
 
-1. **Actores**: a partir de la transcripción de la reunión se identificaron cuatro participantes del proceso — el Usuario/Solicitante, el sistema (Unísabana Anexo y la base de datos), Alexander (Coordinador de Servicio, quien hoy hace todo el trabajo manual) y la Unidad Responsable a la que se asigna cada caso.
-2. **Inicio y fin**: el proceso inicia cuando el usuario radica un caso por cualquiera de los canales disponibles (web, app, correo, WhatsApp o llamada), y termina cuando el caso queda cerrado, ya sea a tiempo o fuera de tiempo.
-3. **Actividades**: se listaron las tareas que la cliente describió explícitamente en la reunión — revisar casos nuevos a diario, clasificar el caso, calcular la fecha límite según el nivel de reporte, asignar la unidad responsable, atender y responder, y registrar la solución.
-4. **Gateways**: se identificaron tres puntos de decisión reales del proceso descrito por la cliente — si la información está completa, si el usuario queda de acuerdo con la respuesta (que puede generar una reapertura del caso) y si la respuesta se dio dentro del plazo.
-5. **Conexión y validación**: se trazaron los flujos de secuencia, se etiquetaron las salidas de cada gateway y se verificó el modelo contra la checklist de autoevaluación de la guía (un solo evento de inicio, ningún camino sin evento de fin, actividades nombradas como verbos de acción, sin elementos flotantes).
-
-Se usó Python para generar el archivo `.drawio` de forma programática (coordenadas y conexiones), y se validó abriéndolo como XML bien formado antes de la entrega.
+1. **Actores (carriles)**: se ajustaron a cuatro carriles — **Solicitante**, **Sistema** (Unísabana Anexo / Excel Online + Power Automate), **Gestor de Casos** (Alexander) y **Área / Facultad** — nomenclatura alineada con la presentada en clase, en vez de nombrar los carriles con nombres propios sueltos.
+2. **Inicio y fin**: el proceso inicia cuando el usuario radica un caso por cualquiera de los canales disponibles, y termina en el evento "Caso cerrado", después de que el sistema registra automáticamente el cambio en el historial de auditoría.
+3. **Actividades**: revisar casos nuevos, clasificar el caso, resolver directamente o redirigir según el nivel, atender y responder, registrar la respuesta y actualizar el estado.
+4. **Gateways**: se reforzó el punto de enrutamiento por nivel de reporte como una **compuerta XOR explícita** de tres salidas mutuamente excluyentes (Nivel 1, Nivel 2, Nivel 3) — antes este cálculo estaba implícito dentro de una tarea del sistema; ahora es una decisión de negocio visible en el modelo, como se explicó en la sesión de clase ("un ticket solo puede pertenecer a un nivel a la vez").
+5. **Conexión y validación**: se trazaron los flujos, se etiquetó cada salida de gateway y se revalidó contra la checklist de la guía (un solo evento de inicio, ningún camino sin evento de fin, verbos de acción, sin elementos flotantes).
 
 ## 🧩 Análisis del modelo propuesto
-El modelo se organiza como un único pool con cuatro carriles, uno por actor, lo que deja explícita la responsabilidad de cada paso — esto responde directamente al primer problema que planteó la cliente: hoy no hay claridad sobre quién modifica qué información dentro del Excel compartido.
+El modelo conserva la estructura de carriles pero incorpora tres ajustes derivados de la discusión en clase:
 
-El punto más particular del modelo es el manejo del control de plazos: en vez de modelarlo como una tarea manual de "revisar vencimientos", se representó como un **evento límite (timer) no interruptivo** adosado a la actividad de atención de la unidad responsable, que dispara el envío de una alerta automática por Teams/correo y cierra en su propio evento de fin. Esto refleja fielmente lo que la cliente pidió en la reunión: una alerta que llegue de forma paralela y automática, sin depender de que alguien recuerde revisar el estado de los casos.
+- **Compuerta XOR de enrutamiento por nivel**: después de clasificar el caso, una compuerta exclusiva decide entre **Nivel 1 (2 días hábiles, resuelto directamente por el Gestor)** y **Nivel 2 / Nivel 3 (4 o 15 días hábiles, que exigen redirección a la Facultad o al Área Legal)**. Esto reemplaza el cálculo de plazo "silencioso" del modelo anterior por una decisión explícita y visible, consistente con la lógica de enrutamiento que se explicó en clase.
+- **Punto crítico resaltado**: la tarea "Actualizar estado a Cerrado en Excel" se marcó con un color distinto (ámbar) porque es, según el diagnóstico presentado en clase, el paso donde hoy se pierde la trazabilidad — al sobrescribir el Excel manualmente no queda registro de quién hizo el cambio ni cuándo.
+- **Registro automático de auditoría**: inmediatamente después de ese punto crítico se agregó la tarea "Registrar automáticamente en Historial de Auditoría (quién, cuándo, qué cambió)", en el carril de Sistema, representando la solución arquitectónica (Power Automate) que resuelve el punto crítico sin modificar el Anexo Unísabana ni introducir software de terceros.
+
+Se mantiene el evento límite (timer) no interruptivo sobre la tarea de atención en Facultad, que dispara la alerta automática por Teams/correo — este es el segundo pilar de la solución (alertas tempranas) y no cambió respecto a la versión anterior.
 
 **Supuestos tomados:**
-- Se asume que la nueva alerta automática reemplaza la revisión manual actual, pero no elimina el registro que hoy hace Alexander — solo lo complementa.
-- Se asume un único evento de fin conceptual ("Caso cerrado"), alcanzado por dos caminos distintos (a tiempo / fuera de tiempo), para mantener el diagrama legible sin sacrificar la distinción que exige el indicador del 80%.
-- No se modeló en detalle el subproceso de generación de reportes semestrales/anuales, porque la cliente lo describió como una salida del proceso y no como parte del flujo de atención de un caso individual; ese tema se retoma en el Taller 2 con el módulo de reportes del diagrama de contexto.
+- Se asume que el Nivel 1 no requiere redirección a Facultad y es resuelto directamente por el Gestor, mientras que los Niveles 2 y 3 sí, tal como lo describe la cliente y lo resume la línea de tiempo presentada en clase.
+- Se asume que el registro en el Historial de Auditoría ocurre de forma automática (vía Power Automate) inmediatamente después de cualquier actualización de estado, sin intervención manual del Gestor.
+- Se mantiene un único evento de fin conceptual ("Caso cerrado"), alcanzado después de pasar por el punto crítico y su registro de auditoría, para no fragmentar el diagrama.
 
 ## 📈 Diagrama final entregado
 Ver [`modelo-final.drawio`](modelo-final.drawio).
@@ -38,20 +40,22 @@ Ver [`modelo-final.drawio`](modelo-final.drawio).
 
 | Nombre del elemento | Tipo | Descripción | Responsable |
 |---|---|---|---|
-| Usuario / Solicitante | Actor | Estudiante, profesor, administrativo o público externo que radica el caso | Cliente |
-| Alexander (Coordinador de Servicio) | Actor | Revisa, clasifica, asigna y da trazabilidad a cada caso | Cliente |
-| Unidad Responsable | Actor | Facultad o área que atiende y responde de fondo el caso asignado | Cliente |
-| Unísabana Anexo / Base de datos | Sistema | Herramienta de tickets y repositorio donde se calculan fechas límite y se generan alertas | Cliente / Dirección de Tecnología |
-| Evento límite "Plazo por vencer" | Evento (timer, no interruptivo) | Dispara la alerta automática cuando un caso está por vencer su plazo de respuesta | Sistema propuesto |
+| Solicitante | Actor | Estudiante, profesor, administrativo o público externo que radica el caso | Cliente |
+| Gestor de Casos (Alexander) | Actor | Revisa, clasifica, enruta y da trazabilidad a cada caso | Cliente |
+| Área / Facultad | Actor | Atiende y responde de fondo los casos de Nivel 2 y Nivel 3 | Cliente |
+| Unísabana Anexo / Excel Online + Power Automate | Sistema | Herramienta de tickets y repositorio donde se calculan plazos, se enrutan casos y se generan alertas y auditoría | Cliente / Dirección de Tecnología |
+| Compuerta XOR "¿Qué nivel de reporte aplica?" | Gateway | Enruta el caso de forma excluyente a Nivel 1, 2 o 3 según su gravedad | Sistema propuesto |
+| Actualizar estado a Cerrado en Excel | Tarea (punto crítico) | Paso donde hoy se pierde la trazabilidad si no se automatiza | Cliente (hoy manual) |
+| Historial de Auditoría | Tarea automática | Registra quién, cuándo y qué campo se modificó en cada caso | Sistema propuesto (Power Automate) |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
-Buenas prácticas de modelado BPMN y su relación con los requisitos de trazabilidad de un sistema de gestión de calidad ISO 9001.
+Buenas prácticas de modelado BPMN, uso de compuertas exclusivas (XOR) para lógica de enrutamiento, y su relación con los requisitos de trazabilidad de un sistema de gestión de calidad ISO 9001.
 
 ### Resumen:
-La investigación confirmó dos criterios que guiaron directamente las decisiones de modelado. Primero, fuentes como Trisotech y ProcessMaker coinciden en mantener el flujo predominantemente horizontal, agrupado en un único pool con carriles por actor, y en evitar líneas cruzadas — por eso el modelo se organizó como un solo pool con cuatro carriles y un flujo de izquierda a derecha, en vez de fragmentarlo en varios diagramas.
+La investigación confirmó que el uso de una compuerta XOR es la forma estándar de modelar decisiones mutuamente excluyentes como la asignación de nivel de reporte, evitando ambigüedad sobre si un caso podría clasificarse en más de un nivel a la vez. Fuentes como Trisotech y ProcessMaker coinciden en mantener el flujo predominantemente horizontal con un único pool y carriles por actor, criterio que se mantuvo al reorganizar los carriles con la nomenclatura discutida en clase (Solicitante, Sistema, Gestor, Facultad).
 
-Segundo, la revisión de la cláusula 8.5.2 de ISO 9001 (identificación y trazabilidad) mostró que los registros manuales en hojas de cálculo dificultan mantener una cadena de auditoría íntegra, y que la buena práctica es que el sistema asigne identificadores únicos y actualice el estado de forma automática en vez de depender de transcripción manual. Esto sustenta por qué el modelo no se limitó a digitalizar el proceso actual, sino que incorporó el evento de alerta automática como un elemento nuevo del flujo — es la traducción directa, en BPMN, del problema de trazabilidad que la cliente planteó como su prioridad.
+La revisión de la cláusula 8.5.2 de ISO 9001 (identificación y trazabilidad) sigue sustentando por qué el "punto crítico" del cierre manual en Excel necesita un paso de auditoría automática inmediatamente después: los registros manuales dificultan mantener una cadena de auditoría íntegra, y la buena práctica es que el sistema capture el cambio de forma automática en el mismo momento en que ocurre, no como una tarea separada que dependa de que alguien la recuerde.
 
 ## 📚 Referencias
 - [1] Trisotech. *BPMN Modeling Best Practices*. https://www.trisotech.com/bpmn-modeling-best-practices/
@@ -60,7 +64,8 @@ Segundo, la revisión de la cláusula 8.5.2 de ISO 9001 (identificación y traza
 - [4] ProcessMind. *BPMN 2.0 Modeling Tips & Best Practices*. https://processmind.com/resources/docs/best-practices/bpmn-modeling-tips
 - [5] Qualityze. *ISO 9001 Clause 8.5.2 — Identification & Traceability*. https://www.qualityze.com/blogs/iso-9001-clause-8-5-2-identification-traceability
 - [6] Core Business Solutions. *Clause 8.5.2 ISO 9001:2015 Explained*. https://www.thecoresolution.com/clause-8-5-2-iso-9001-2015-explained
-- Fuente asistida por IA: Claude (Anthropic), agosto 2026 — apoyo en la estructuración del modelo BPMN y la redacción de este informe a partir de la transcripción de la reunión con la cliente.
+- [7] OMG. *Especificación oficial BPMN*. https://www.omg.org/spec/BPMN/
+- Fuente asistida por IA: Claude (Anthropic), agosto 2026 — apoyo en la reestructuración del modelo BPMN según la retroalimentación de clase y la redacción de este informe.
 
 ---
 
