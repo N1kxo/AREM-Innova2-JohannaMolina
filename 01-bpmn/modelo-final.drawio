@@ -1,101 +1,119 @@
 <mxfile host="app.diagrams.net">
   <diagram name="BPMN - Caso PQRSF" id="0">
-    <mxGraphModel dx="2463" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="700" math="0" shadow="0">
+    <mxGraphModel dx="2814" dy="1737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="750" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="pool1" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f5f5f5;" value="Proceso: Gestión y Seguimiento de Casos PQRSF - Comuníquese con Nosotros" vertex="1">
-          <mxGeometry height="670" width="2440" x="20" y="20" as="geometry" />
+          <mxGeometry height="710" width="2940" x="20" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="lane_usuario" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Usuario / Solicitante" vertex="1">
-          <mxGeometry height="160" width="2410" as="geometry" />
+        <mxCell id="lane_solicitante" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Solicitante" vertex="1">
+          <mxGeometry height="170" width="2910" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-3" edge="1" parent="lane_usuario" source="n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="RJdXqPw7bVZXmZrfWLaK-1" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="n1" parent="lane_solicitante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="80" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n1" parent="lane_usuario" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="80" y="60" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-2" parent="lane_solicitante" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Usuario radica caso (web, app, correo, WhatsApp o llamada)" vertex="1">
+          <mxGeometry height="75" width="180" x="200" y="52.5" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-1" parent="lane_usuario" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Usuario radica caso (web, app, correo, WhatsApp o llamada)" vertex="1">
-          <mxGeometry height="70" width="170" x="200" y="50" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-3" edge="1" parent="lane_solicitante" source="n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="KrMyWJA8VnLo7mf9UDX5-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="110" as="sourcePoint" />
+            <mxPoint x="310" y="235" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="lane_sistema" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Sistema (Unísabana Anexo / Base de Datos)" vertex="1">
-          <mxGeometry height="160" width="2410" y="160" as="geometry" />
+        <mxCell id="lane_sistema" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Sistema (Unísabana Anexo / Excel Online + Power Automate)" vertex="1">
+          <mxGeometry height="170" width="2910" x="10" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="n2" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar el caso en Unísabana Anexo" vertex="1">
-          <mxGeometry height="70" width="170" x="200" y="40" as="geometry" />
+        <mxCell id="n2" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar automáticamente el ticket en Unísabana Anexo" vertex="1">
+          <mxGeometry height="75" width="180" x="200" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="n7" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Calcular fecha límite de respuesta (según nivel: 2/4/15 días)" vertex="1">
-          <mxGeometry height="70" width="170" x="760" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="n19" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Enviar alerta automática (Teams/correo) a Alexander y jefe" vertex="1">
-          <mxGeometry height="70" width="170" x="1160" y="40" as="geometry" />
+        <mxCell id="n19" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Enviar alerta automática (Teams/correo) a Gestor y Jefatura" vertex="1">
+          <mxGeometry height="75" width="180" x="1450" y="45" as="geometry" />
         </mxCell>
         <mxCell id="n20" parent="lane_sistema" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FF8000;strokeWidth=3;fontColor=#ffffff;strokeColor=light-dark(#000000,#663300);" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="1390" y="50" as="geometry" />
+          <mxGeometry height="50" width="50" x="1670" y="57.5" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-4" parent="lane_sistema" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(18, 18, 18), rgb(255, 255, 255));&quot;&gt;Alerta enviada&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="1385" y="110" as="geometry" />
+        <mxCell id="n18" parent="lane_sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c9f2f0;strokeColor=#31a89c;" value="Registrar automáticamente en Historial de Auditoría (quién, cuándo, qué cambió)" vertex="1">
+          <mxGeometry height="75" width="180" x="2560" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="lane_alexander" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Alexander (Coordinador de Servicio)" vertex="1">
-          <mxGeometry height="160" width="2410" y="320" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-6" parent="lane_sistema" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Alerta enviada" vertex="1">
+          <mxGeometry height="30" width="60" x="1660" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="n3" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Revisar casos nuevos (diario)" vertex="1">
-          <mxGeometry height="70" width="170" x="410" y="40" as="geometry" />
+        <mxCell id="lane_gestor" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Gestor de Casos (Alexander)" vertex="1">
+          <mxGeometry height="170" width="2910" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="n4" parent="lane_alexander" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
-          <mxGeometry height="70" width="70" x="620" y="35" as="geometry" />
+        <mxCell id="n3" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Revisar casos nuevos (diario)" vertex="1">
+          <mxGeometry height="75" width="180" x="420" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="n6" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Clasificar caso (categoría, tema, subtema, tipo, nivel)" vertex="1">
-          <mxGeometry height="70" width="170" x="760" y="35" as="geometry" />
+        <mxCell id="n4" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="75" x="640" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n8" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar caso en BD y asignar unidad responsable" vertex="1">
-          <mxGeometry height="70" width="170" x="960" y="40" as="geometry" />
+        <mxCell id="n6" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Clasificar caso (categoría, tema, subtema, tipo)" vertex="1">
+          <mxGeometry height="75" width="180" x="800" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="n10" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar la solución en la base de datos" vertex="1">
-          <mxGeometry height="70" width="170" x="1380" y="40" as="geometry" />
+        <mxCell id="n21" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;X&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="75" x="1010" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n11" parent="lane_alexander" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
-          <mxGeometry height="70" width="70" x="1580" y="35" as="geometry" />
+        <mxCell id="n23" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Redirigir caso a Facultad / Área Legal (Nivel 2 ó 3)" vertex="1">
+          <mxGeometry height="75" width="180" x="1240" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n13" parent="lane_alexander" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
-          <mxGeometry height="70" width="70" x="1780" y="35" as="geometry" />
+        <mxCell id="n10" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Registrar respuesta en la base de datos (Excel Online)" vertex="1">
+          <mxGeometry height="75" width="180" x="1670" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="n14" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado fuera de tiempo (afecta indicador 80%)" vertex="1">
-          <mxGeometry height="70" width="170" x="1980" y="40" as="geometry" />
+        <mxCell id="n11" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="75" x="1900" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n15" parent="lane_alexander" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado a tiempo" vertex="1">
-          <mxGeometry height="70" width="170" x="1980" y="40" as="geometry" />
+        <mxCell id="n13" parent="lane_gestor" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;X&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="75" x="2110" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n16" parent="lane_alexander" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FF8000;strokeColor=light-dark(#000000,#663300);strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#ffffff;" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="2200" y="60" as="geometry" />
+        <mxCell id="n14" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado fuera de tiempo (afecta indicador 80%)" vertex="1">
+          <mxGeometry height="75" width="180" x="2320" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-5" parent="lane_alexander" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="¿Información completa?" vertex="1">
-          <mxGeometry height="30" width="60" x="625" y="110" as="geometry" />
+        <mxCell id="n15" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Marcar cerrado a tiempo" vertex="1">
+          <mxGeometry height="75" width="180" x="2320" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-6" parent="lane_alexander" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;¿Usuario de acuerdo con la respuesta?&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="120" x="1555" y="110" as="geometry" />
+        <mxCell id="n17" parent="lane_gestor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b3;strokeColor=#d79b00;" value="Actualizar estado a Cerrado en Excel (punto crítico)" vertex="1">
+          <mxGeometry height="75" width="180" x="2560" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-8" parent="lane_alexander" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;¿Respuesta dentro del plazo establecido?&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="105" x="1762.5" y="110" as="geometry" />
+        <mxCell id="n16" parent="lane_gestor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FF8000;strokeColor=light-dark(#000000,#663300);strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="2800" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-9" parent="lane_alexander" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(18, 18, 18), rgb(255, 255, 255));&quot;&gt;Caso cerrado&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="2195" y="120" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-4" parent="lane_gestor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="¿Información completa?" vertex="1">
+          <mxGeometry height="30" width="60" x="647.5" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="lane_unidad" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Unidad Responsable" vertex="1">
-          <mxGeometry height="160" width="2410" y="480" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-5" parent="lane_gestor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="¿Qué nivel de reporte aplica? (XOR)" vertex="1">
+          <mxGeometry height="30" width="130" x="982.5" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="n9" parent="lane_unidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Atender caso y elaborar respuesta" vertex="1">
-          <mxGeometry height="70" width="170" x="1010" y="80" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-7" parent="lane_gestor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(18, 18, 18), rgb(255, 255, 255));&quot;&gt;Caso cerrado&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="2795" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="tb1" parent="lane_unidad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;dashed=0;" value="Plazo por vencer" vertex="1">
-          <mxGeometry height="40" width="40" x="1230" y="30" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-8" parent="lane_gestor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;¿Usuario de acuerdo con la respuesta?&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="107.5" x="1883.75" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="n12" parent="lane_unidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reabrir caso y gestionar nueva respuesta" vertex="1">
-          <mxGeometry height="70" width="150" x="1580" y="40" as="geometry" />
+        <mxCell id="KrMyWJA8VnLo7mf9UDX5-9" parent="lane_gestor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;¿Respuesta dentro del plazo establecido?&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="107.5" x="2093.75" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="n5" parent="lane_unidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Solicitar información adicional al usuario o unidad" vertex="1">
-          <mxGeometry height="70" width="150" x="580" y="50" as="geometry" />
+        <mxCell id="lane_facultad" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=20;fillColor=#ffffff;" value="Área / Facultad" vertex="1">
+          <mxGeometry height="170" width="2910" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Atender caso y elaborar respuesta" vertex="1">
+          <mxGeometry height="75" width="180" x="1450" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="tb1" parent="lane_facultad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="Plazo por vencer" vertex="1">
+          <mxGeometry height="40" width="40" x="1520" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reabrir caso y gestionar nueva respuesta" vertex="1">
+          <mxGeometry height="75" width="160" x="1857.5" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Solicitar información adicional al usuario o unidad" vertex="1">
+          <mxGeometry height="75" width="160" x="597.5" y="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" parent="lane_facultad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Resolver directamente (Nivel 1 - 2 días hábiles)" vertex="1">
+          <mxGeometry height="75" width="170" x="960" y="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="pool1" source="KrMyWJA8VnLo7mf9UDX5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n2" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e2" edge="1" parent="pool1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n3" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -112,52 +130,63 @@
         <mxCell id="e6" edge="1" parent="pool1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n6" value="Sí">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" edge="1" parent="pool1" source="n6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n7" value="">
+        <mxCell id="e7" edge="1" parent="pool1" source="n6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n21" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="pool1" source="n7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n8" value="">
+        <mxCell id="e21a" edge="1" parent="pool1" source="n21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n22" value="Nivel 1 (2 días hábiles)">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="pool1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n9" value="">
+        <mxCell id="e21b" edge="1" parent="pool1" source="n21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n23" value="Nivel 2 (4 días) / Nivel 3 (15 días, legal)">
+          <mxGeometry relative="1" x="0.0666" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23_9" edge="1" parent="pool1" source="n23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n9" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" edge="1" parent="pool1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="tb1" value="">
+        <mxCell id="e9tb" edge="1" parent="pool1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="tb1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e11" edge="1" parent="pool1" source="tb1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="n19" value="evento límite no interruptivo">
+        <mxCell id="etb19" edge="1" parent="pool1" source="tb1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="n19" value="evento límite no interruptivo">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e11b" edge="1" parent="pool1" source="n19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n20" value="">
+        <mxCell id="e1920" edge="1" parent="pool1" source="n19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n20" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e12" edge="1" parent="pool1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n10" value="">
+        <mxCell id="e22_10" edge="1" parent="pool1" source="n22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n10" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e13" edge="1" parent="pool1" source="n10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n11" value="">
+        <mxCell id="e9_10" edge="1" parent="pool1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n10" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e14" edge="1" parent="pool1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n12" value="No">
+        <mxCell id="e10_11" edge="1" parent="pool1" source="n10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n11" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e15" edge="1" parent="pool1" source="n12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n9" value="">
+        <mxCell id="e11_12" edge="1" parent="pool1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n12" value="No">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e16" edge="1" parent="pool1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n13" value="Sí">
+        <mxCell id="e12_9" edge="1" parent="pool1" source="n12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n9" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e17" edge="1" parent="pool1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n14" value="No">
+        <mxCell id="e11_13" edge="1" parent="pool1" source="n11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n13" value="Sí">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e18" edge="1" parent="pool1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n15" value="Sí">
+        <mxCell id="e13_14" edge="1" parent="pool1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n14" value="No">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e19" edge="1" parent="pool1" source="n14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n16" value="">
+        <mxCell id="e13_15" edge="1" parent="pool1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n15" value="Sí">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e20" edge="1" parent="pool1" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n16" value="">
+        <mxCell id="e14_17" edge="1" parent="pool1" source="n14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n17" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RJdXqPw7bVZXmZrfWLaK-2" edge="1" parent="pool1" source="RJdXqPw7bVZXmZrfWLaK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n2">
+        <mxCell id="e15_17" edge="1" parent="pool1" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17_18" edge="1" parent="pool1" source="n17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18_16" edge="1" parent="pool1" source="n18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n16" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
