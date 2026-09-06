@@ -1,0 +1,120 @@
+<mxfile host="app.diagrams.net" version="24.7.5">
+  <diagram name="Mapa de Infraestructura - PQRSF" id="infra-pqrsf">
+    <mxGraphModel dx="1700" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Zone: Clientes -->
+        <mxCell id="zclientes" value="Clientes / Dispositivos" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="260" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="cli1" value="📱 Dispositivo del Solicitante&#10;(navegador, app, teléfono, WhatsApp)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cli2" value="⚠️ Alexander&#10;PC del Contact Center&#10;(único que registra 3 canales manuales)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cli3" value="💻 Unidad Responsable / Facultad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="370" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cli4" value="💻 Johanna&#10;PC Supervisora" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="70" y="510" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Zone: Red institucional -->
+        <mxCell id="zred" value="Red Institucional / Campus&#10;(Universidad de La Sabana)" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="260" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="red1" value="⚠️ Red / VPN Institucional&#10;(enlace único asumido,&#10;sin visibilidad de redundancia)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="260" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="red2" value="Red Telefónica" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="400" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Zone: On-premise -->
+        <mxCell id="zonprem" value="Infraestructura On-Premise&#10;(Dirección de Tecnología, fuera del&#10;control del área de Servicio al Cliente)" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="280" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="op1" value="⚠️ Servidor Anexo Unisabana&#10;(plataforma de tickets,&#10;instancia única)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="680" y="120" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="op2" value="Central Telefónica / PBX&#10;(gestionada por la universidad,&#10;redundancia no visible)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="680" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Zone: Nube M365 -->
+        <mxCell id="znube" value="Nube Microsoft 365" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="40" width="300" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="nu1" value="Exchange Online&#10;(correo institucional)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="90" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nu2" value="⚠️ SharePoint / Excel Online&#10;Consolidado de Casos&#10;(archivo único compartido,&#10;sin control de versiones)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="230" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nu3" value="Microsoft Teams" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438dd5;strokeColor=#2e6295;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="420" width="220" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Zone: Servicios externos de terceros -->
+        <mxCell id="zext" value="Servicios Externos de Terceros" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="40" width="260" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ex1" value="WhatsApp Business&#10;(Meta Cloud API)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="90" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="e1" value="web/app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli1" target="op1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="correo (internet)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli1" target="nu1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="mensaje (internet)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli1" target="ex1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="llamada (voz)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli1" target="red2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="red2" target="op2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e6" value="gestiona tickets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli2" target="op1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="transcribe correo/WhatsApp/&#10;llamada al Excel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli2" target="nu2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="consulta correo/Teams" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli2" target="nu1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e9" value="exporta campos básicos&#10;(manual, limitado)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;" edge="1" parent="1" source="op1" target="nu2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e10" value="registra respuesta de fondo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli3" target="nu2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="consulta y genera reportes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;" edge="1" parent="1" source="cli4" target="nu2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;" edge="1" parent="1" source="cli2" target="red1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;" edge="1" parent="1" source="red1" target="op1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;" edge="1" parent="1" source="red1" target="nu1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

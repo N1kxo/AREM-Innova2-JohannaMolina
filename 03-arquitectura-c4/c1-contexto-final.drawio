@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" version="24.7.5">
+  <diagram name="C1 - Contexto PQRSF" id="c1-pqrsf">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Actors -->
+        <mxCell id="a1" value="Solicitante&#10;(estudiante, profesor, administrativo&#10;o público externo)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="Alexander&#10;(Gestor de Casos)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="Unidad Responsable / Facultad&#10;(atiende Nivel 2 y Nivel 3)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="Johanna&#10;(Supervisora del Centro de Contacto)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- System in scope -->
+        <mxCell id="s1" value="Sistema de Gestión de PQRs y Tickets&#10;&quot;Comuníquese con Nosotros&quot;&#10;(Anexo Unisabana + Excel)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#08427b;strokeColor=#052e56;fontColor=#ffffff;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="200" width="260" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- External systems -->
+        <mxCell id="e1" value="Sitio Web Institucional&#10;/ App Unisabana" style="shape=process;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="40" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Microsoft 365&#10;(Teams / Correo institucional)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="150" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="WhatsApp" style="shape=process;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="260" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Central Telefónica" style="shape=process;whiteSpace=wrap;html=1;fillColor=#8a8a8a;strokeColor=#5c5c5c;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="370" width="220" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Relations: actors -> system -->
+        <mxCell id="r1" value="Radica PQR/ticket (queja, reclamo,&#10;sugerencia, felicitación, solicitud)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="a1" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="Clasifica, gestiona y actualiza&#10;el estado de los casos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="a2" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="Recibe casos redirigidos y&#10;registra su respuesta de fondo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="a3" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3b" value="Supervisa cumplimiento de SLA&#10;y genera reportes semestrales" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="a4" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Relations: system -> external -->
+        <mxCell id="r4" value="Recibe solicitudes radicadas&#10;(integración nativa Anexo Unisabana)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" edge="1" parent="1" source="s1" target="e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="Envía y recibe comunicaciones&#10;del caso (manual, sin alertas)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" edge="1" parent="1" source="s1" target="e2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" value="Recibe mensajes de solicitantes (manual)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" edge="1" parent="1" source="s1" target="e3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" value="Registra solicitudes recibidas&#10;por llamada (manual)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" edge="1" parent="1" source="s1" target="e4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
