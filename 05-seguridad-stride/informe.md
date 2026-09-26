@@ -4,7 +4,7 @@
 _Taller 5 - Evaluación de Seguridad con STRIDE_
 
 ## 👥 Integrantes del equipo
-- Nicolas Esteban Muñoz Sendoya (nicolas.msendoya@gmail.com — GitHub: N1kxo)
+- Nicolas Esteban Muñoz Sendoya (nico9ms@hotmail.com — GitHub: N1kxo)
 - Juan David Orozco Rodríguez (davidorozcoj1@gmail.com — GitHub: DavidOrozcoJ)
 
 ## 🧠 Descripción general del trabajo
