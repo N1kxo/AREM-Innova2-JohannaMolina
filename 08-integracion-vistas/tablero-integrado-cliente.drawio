@@ -1,0 +1,119 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="tablero-integrado-cliente" name="Tablero Integrado - Cliente Real">
+    <mxGraphModel dx="1800" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1450" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="NEGOCIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="40" width="1640" height="150" as="geometry"/></mxCell>
+<mxCell id="n2" value="APLICACIONES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="210" width="1640" height="220" as="geometry"/></mxCell>
+<mxCell id="n3" value="INFORMACION" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="450" width="1640" height="190" as="geometry"/></mxCell>
+<mxCell id="n4" value="INFRAESTRUCTURA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="660" width="1640" height="220" as="geometry"/></mxCell>
+<mxCell id="n5" value="SEGURIDAD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="900" width="1640" height="260" as="geometry"/></mxCell>
+<mxCell id="n6" value="Radicacion multicanal del caso
+(correo, WhatsApp, llamada, sitio web / app)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="260" height="90" as="geometry"/></mxCell>
+<mxCell id="n7" value="Clasificacion y enrutamiento por nivel
+Compuerta XOR: Nivel 1 / Nivel 2 / Nivel 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="360" y="80" width="260" height="90" as="geometry"/></mxCell>
+<mxCell id="n8" value="Atencion, cierre y registro automatico
+de auditoria (NUEVO: Historial de Auditoria)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="660" y="80" width="300" height="90" as="geometry"/></mxCell>
+<mxCell id="n9" value="Anexo Unisabana
+(plataforma de tickets, exportacion limitada)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="60" y="250" width="230" height="70" as="geometry"/></mxCell>
+<mxCell id="n10" value="Registro manual
+(correo / WhatsApp / llamadas)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="330" y="250" width="230" height="70" as="geometry"/></mxCell>
+<mxCell id="n11" value="Consolidado de Casos - Excel
+(sin control de versiones ni auditoria)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="600" y="250" width="230" height="70" as="geometry"/></mxCell>
+<mxCell id="n12" value="NUEVO: Lista de SharePoint
+Consolidado PQRSF (historial + permisos por rol)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="870" y="250" width="250" height="70" as="geometry"/></mxCell>
+<mxCell id="n13" value="NUEVO: Power Automate
+Alertas de SLA + registro de auditoria" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1160" y="250" width="250" height="70" as="geometry"/></mxCell>
+<mxCell id="n14" value="Reportes Semestrales
+(tablas dinamicas manuales)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1450" y="250" width="210" height="70" as="geometry"/></mxCell>
+<mxCell id="n15" value="TICKET
+(id_ticket, fecha_ingreso,
+nivel_reporte, fecha_limite, estado)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="60" y="490" width="180" height="60" as="geometry"/></mxCell>
+<mxCell id="n16" value="USUARIO_SOLICITANTE
+(id_usuario, nombre, apellido, correo)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="270" y="490" width="180" height="60" as="geometry"/></mxCell>
+<mxCell id="n17" value="CANAL
+(id_canal, nombre_canal)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="480" y="490" width="150" height="60" as="geometry"/></mxCell>
+<mxCell id="n18" value="CATEGORIA
+(id_categoria, hoja, tema, subtema)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="660" y="490" width="150" height="60" as="geometry"/></mxCell>
+<mxCell id="n19" value="AREA_RESPONSABLE
+(id_area, nombre_area)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="840" y="490" width="180" height="60" as="geometry"/></mxCell>
+<mxCell id="n20" value="REGISTRO_AUDITORIA
+(campo_modificado, valor_anterior,
+valor_nuevo, usuario_modifica, fecha_hora)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1050" y="490" width="230" height="60" as="geometry"/></mxCell>
+<mxCell id="n21" value="Servidor Anexo Unisabana
+(On-premise, instancia unica)  ⚠" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="60" y="700" width="250" height="70" as="geometry"/></mxCell>
+<mxCell id="n22" value="SharePoint / Excel Online
+Consolidado de Casos  ⚠" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="340" y="700" width="250" height="70" as="geometry"/></mxCell>
+<mxCell id="n23" value="Red / VPN Institucional
+(Campus - Universidad)  ⚠" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="620" y="700" width="230" height="70" as="geometry"/></mxCell>
+<mxCell id="n24" value="Microsoft 365 (Nube)
+Teams / Exchange Online" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1"><mxGeometry x="880" y="700" width="220" height="70" as="geometry"/></mxCell>
+<mxCell id="n25" value="WhatsApp Business
+(Meta - fuera de Colombia)  ⚠" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1130" y="700" width="230" height="70" as="geometry"/></mxCell>
+<mxCell id="n26" value="NUEVO: Plan de Continuidad
+(BCP/DRP) para Anexo Unisabana" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1390" y="700" width="270" height="70" as="geometry"/></mxCell>
+<mxCell id="n27" value="T2/T3/T7 - Tampering y Repudiation
+(Excel sin historial de cambios,
+sin autoria obligatoria)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="60" y="940" width="260" height="80" as="geometry"/></mxCell>
+<mxCell id="n28" value="T4 - Information Disclosure
+(datos personales PQRSF sobre-expuestos
+en el Excel compartido)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="350" y="940" width="240" height="80" as="geometry"/></mxCell>
+<mxCell id="n29" value="T5 - Denial of Service
+(sin alertas tempranas de SLA,
+picos de volumen sin aviso)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" vertex="1" parent="1"><mxGeometry x="620" y="940" width="240" height="80" as="geometry"/></mxCell>
+<mxCell id="n30" value="NUEVO: Historial nativo + permisos
+por rol/columna (Lista de SharePoint)
+Mitiga T2 / T3 / T4 / T7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="900" y="940" width="280" height="80" as="geometry"/></mxCell>
+<mxCell id="n31" value="NUEVO: Alertas automaticas de SLA
+(Power Automate)
+Mitiga T5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1220" y="940" width="260" height="80" as="geometry"/></mxCell>
+<mxCell id="n32" value="T1, T6, T8
+sin mitigar en este
+TO-BE (trabajo futuro)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1500" y="940" width="160" height="80" as="geometry"/></mxCell>
+<mxCell id="e33" value="radica (web/app)" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n6" target="n9"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e34" value="radica (correo/WhatsApp/llamada)" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n6" target="n10"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e35" value="caso registrado" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n9" target="n7"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e36" value="transcripcion manual" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n10" target="n11"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e37" value="copia manual (export. limitada)" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n9" target="n11"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e38" value="Nivel 1/2/3 resuelto" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n7" target="n8"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e39" value="actualiza estado a Cerrado" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n8" target="n11"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e40" value="dispara registro automatico" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n8" target="n13"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e41" value="tablas dinamicas" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n11" target="n14"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e42" value="historial + notificaciones" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n12" target="n13"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e43" value="migracion (WP1)" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n11" target="n12"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e44" value="crea" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n9" target="n15"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e45" value="clasifica canal" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n10" target="n17"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e46" value="identifica solicitante" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n6" target="n16"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e47" value="clasifica" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n7" target="n18"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e48" value="enruta a" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n7" target="n19"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e49" value="registra cambio" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n13" target="n20"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e50" value="hoy: sin registro (riesgo)" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n11" target="n20"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e51" value="se ejecuta sobre" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n9" target="n21"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e52" value="se almacena en" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n11" target="n22"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e53" value="canal WhatsApp" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n10" target="n25"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e54" value="reemplaza (misma nube M365)" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n12" target="n22"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e55" value="se ejecuta sobre" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n13" target="n24"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e56" value="requiere" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n21" target="n26"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e57" value="trafico institucional" style="endArrow=block;html=1;rounded=0;strokeColor=#444444;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n6" target="n23"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e58" value="expone" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n22" target="n27"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e59" value="expone" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n22" target="n28"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e60" value="sin alertas, expone" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n21" target="n29"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e61" value="transferencia internacional (pendiente)" style="endArrow=block;html=1;rounded=0;strokeColor=#B85450;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n25" target="n29"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e62" value="habilita" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n12" target="n30"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e63" value="habilita" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n13" target="n31"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e64" value="mitiga" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;dashPattern=1 3;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n30" target="n27"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e65" value="mitiga" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;dashPattern=1 3;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n30" target="n28"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e66" value="mitiga" style="endArrow=block;html=1;rounded=0;strokeColor=#2D7D46;dashed=1;dashPattern=1 3;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n31" target="n29"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="n67" value="LEYENDA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;verticalAlign=top;align=left;fontSize=14;fontStyle=1;spacingLeft=10;spacingTop=6;fontSize=14;" vertex="1" parent="1"><mxGeometry x="20" y="1250" width="420" height="150" as="geometry"/></mxCell>
+<mxCell id="n68" value="Elemento AS-IS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="1285" width="170" height="30" as="geometry"/></mxCell>
+<mxCell id="n69" value="AS-IS en riesgo ⚠" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=11;" vertex="1" parent="1"><mxGeometry x="240" y="1285" width="180" height="30" as="geometry"/></mxCell>
+<mxCell id="n70" value="NUEVO (TO-BE, Taller 7)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#2D7D46;dashed=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="1325" width="170" height="30" as="geometry"/></mxCell>
+<mxCell id="n71" value="Entidad de informacion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="240" y="1325" width="180" height="30" as="geometry"/></mxCell>
+<mxCell id="n72" value="Flecha solida: relacion AS-IS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;fontSize=10;" vertex="1" parent="1"><mxGeometry x="40" y="1365" width="170" height="25" as="geometry"/></mxCell>
+<mxCell id="n73" value="Flecha punteada verde: NUEVO / mitiga" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;fontSize=10;" vertex="1" parent="1"><mxGeometry x="240" y="1365" width="180" height="25" as="geometry"/></mxCell>
+<mxCell id="n74" value="Tablero Integrado - Cliente Real (Centro de Contacto / Johanna Molina) - Hilo: Registro, enrutamiento y cierre de un caso PQRSF" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;align=left;fontSize=12;" vertex="1" parent="1"><mxGeometry x="20" y="-40" width="1640" height="30" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
