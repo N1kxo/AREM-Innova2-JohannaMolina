@@ -46,4 +46,3 @@ Todo el análisis que sustenta esta propuesta está documentado carpeta por carp
 ## 👥 Contacto
 
 Johanna Andrea Molina, johannaMR@unisabana.edu.co
-[Nombre de quien responde preguntas del cliente sobre esta propuesta, y su correo/usuario de GitHub.]
