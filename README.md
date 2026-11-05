@@ -1,5 +1,5 @@
 
-# Arquitectura Empresarial — Johanna Andrea Molina
+# Mejora de la gestión de PQRSF — Centro de Contacto, Universidad de La Sabana
 
 **Equipo:** Innova2 · Nicolas Esteban Muñoz Sendoya, Juan David Orozco Rodriguez
 **Curso:** Arquitectura Empresarial — Universidad de La Sabana
@@ -8,25 +8,31 @@
 
 ## 📌 En una frase
 
-
-[Ej: "Rediseñamos cómo Fundación Salud Viva conecta su app móvil, su ERP y su plataforma de telemedicina, para que la atención a pacientes sea más rápida y los datos clínicos queden protegidos."]
+Analizamos cómo el Centro de Contacto gestiona hoy las peticiones, quejas, reclamos, sugerencias y felicitaciones ("Comuníquese con Nosotros") y proponemos mejoras para que cada caso quede trazado, se atienda a tiempo y los datos de los usuarios estén protegidos, usando las herramientas que la Universidad ya tiene.
 
 ## 🩺 El problema
 
-[2-4 líneas, en el lenguaje del cliente, no en el nuestro. Ej: "Hoy la información de un paciente vive en tres sistemas que no se hablan entre sí: la app, el ERP y la telemedicina. Eso genera reprocesos, retrasos en la atención y dificulta cumplir con la normativa de protección de datos clínicos."]
+Los casos llegan por correo, WhatsApp, llamadas, el sitio web y la app de la Universidad. Se registran en la plataforma de tickets, pero esta no permite exportar todos los campos que el área necesita. Por eso el equipo mantiene en paralelo un Excel compartido, que en la práctica es la fuente de verdad. Esto genera cuatro dolores:
+
+- No queda registro de quién cambió qué y cuándo en el Excel, lo que complica la auditoría de calidad (ISO 9001).
+- Los informes semestrales se arman a mano y toman mucho tiempo.
+- No hay alertas cuando un caso se acerca a su fecha límite, y la meta es atender el 80 % a tiempo.
+- Si el servidor de la plataforma falla, o si la persona que atiende los canales manuales no está, la operación se detiene.
 
 ## 💡 Lo que proponemos
 
-[3-5 líneas o viñetas, en lenguaje de negocio, sin nombrar herramientas ni marcos técnicos. Ej:
-- Integrar los tres sistemas para que la información del paciente se actualice en tiempo real en todos lados.
-- Reforzar la protección de los datos clínicos según la normativa vigente.
-- Un plan de implementación en fases, empezando por lo más urgente y de menor costo.]
+- **Historial y control de cambios:** que cada modificación a un caso quede registrada (quién, cuándo y qué), con permisos por rol.
+- **Alertas oportunas:** avisos automáticos antes de que un caso venza, para llegar a la meta del 80 % a tiempo.
+- **Continuidad del servicio:** un plan de respaldo y recuperación para que una falla del servidor no deje al Centro de Contacto sin operar.
+- **Cumplimiento normativo:** un paquete de documentación para la protección de datos personales (Ley 1581), con procedimiento para atender solicitudes de los titulares, evaluación del uso de WhatsApp Business frente a la transferencia internacional de datos y criterios de conservación y anonimización.
+- **Implementación en fases**, empezando por lo más urgente y de menor costo, y sin salir del ecosistema que la Universidad ya usa.
+
 
 ## 🗺️ Cómo se implementa
 
 Ver el **[Resumen Ejecutivo](resumen-ejecutivo.md)** — ahí está el detalle de beneficios esperados, fases de implementación y tiempos, en un solo documento pensado para el negocio, no para el equipo técnico.
 
-s## 📂 Si quiere ver el detalle técnico completo
+## 📂 Si quiere ver el detalle técnico completo
 
 Todo el análisis que sustenta esta propuesta está documentado carpeta por carpeta, siguiendo el método usado durante el proyecto:
 
@@ -46,4 +52,3 @@ Todo el análisis que sustenta esta propuesta está documentado carpeta por carp
 ## 👥 Contacto
 
 Johanna Andrea Molina, johannaMR@unisabana.edu.co
-[Nombre de quien responde preguntas del cliente sobre esta propuesta, y su correo/usuario de GitHub.]
