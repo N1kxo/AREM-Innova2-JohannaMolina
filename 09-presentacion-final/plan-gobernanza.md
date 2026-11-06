@@ -8,7 +8,7 @@ Centro de Contacto (Contact Center) — Universidad de La Sabana. Contacto: Joha
 - Juan David Orozco Rodríguez (davidorozcoj1@gmail.com — GitHub: DavidOrozcoJ)
 
 ## Propósito de este documento
-Johanna Molina (Supervisora del Centro de Contacto), junto con un representante del equipo de arquitectura, supervisa la ejecución de `plan-implementacion.md` durante sus 4 fases. Si una fase necesita desviarse del diseño TO-BE aprobado en el Taller 7 (por ejemplo, por una restricción de licenciamiento de Microsoft 365), esa desviación no se decide informalmente: pasa por el mecanismo de escalamiento definido más abajo.
+El Supervisor del Centro de Contacto, junto con un representante del equipo de arquitectura, supervisa la ejecución de `plan-implementacion.md` durante sus 4 fases. Si una fase necesita desviarse del diseño TO-BE aprobado en el Taller 7 (por ejemplo, por una restricción de licenciamiento de Microsoft 365), esa desviación no se decide informalmente: pasa por el mecanismo de escalamiento definido más abajo.
 
 ## Principios Arquitectónicos
 
@@ -36,8 +36,8 @@ No hay principios del borrador del Taller 0 que se retiren: las 2 restricciones 
 
 | Rol | Responsabilidad | Persona / equipo sugerido |
 |---|---|---|
-| Sponsor / aprobador final | Aprueba el cierre de cada fase y autoriza excepciones al diseño TO-BE | Johanna Molina (Supervisora del Centro de Contacto) |
-| Representante operativo | Valida que el resultado de cada fase funciona en el día a día del proceso | Alexander (Gestor de Casos) |
+| Sponsor / aprobador final | Aprueba el cierre de cada fase y autoriza excepciones al diseño TO-BE | Supervisor del Centro de Contacto |
+| Representante operativo | Valida que el resultado de cada fase funciona en el día a día del proceso | Gestor de Casos |
 | Arquitecto(s) de la solución | Verifica que la implementación de cada fase coincide con el TO-BE del Taller 7 y con el tablero integrado del Taller 8 | Nicolás Muñoz / Juan David Orozco |
 | Punto de contacto técnico | Ejecuta o supervisa la configuración de SharePoint, Power Automate, Purview y el BCP/DRP del servidor | Dirección de Tecnología (equipo TI institucional) |
 
@@ -48,7 +48,7 @@ Reunión mensual del Comité de Arquitectura mientras dure la ejecución del roa
 Una fase se cierra solo si el equipo de arquitectura (Nicolás / Juan David) valida que el resultado coincide con el diseño TO-BE del Taller 7 (`07-opportunities-solutions/to-be-aplicaciones-final.drawio` y `to-be-tecnologia-final.drawio`) y con el tablero integrado del Taller 8 (`08-integracion-vistas/tablero-integrado-cliente.drawio`). No es una opinión subjetiva: es una comparación elemento por elemento contra esos dos entregables ya aprobados.
 
 ## Escalamiento
-Cualquier desviación del diseño aprobado (por ejemplo, que Microsoft Purview no esté disponible en el licenciamiento institucional actual) debe proponerla quien la detecte, evaluarla el equipo de arquitectura frente a los Principios Arquitectónicos de este documento, y debe quedar aprobada por escrito por Johanna Molina antes de continuar la fase. Si la desviación es lo suficientemente importante como para cambiar el diseño TO-BE mismo (no solo un detalle de implementación), se registra como una nueva ADR siguiendo `procedimiento-cambios.md`.
+Cualquier desviación del diseño aprobado (por ejemplo, que Microsoft Purview no esté disponible en el licenciamiento institucional actual) debe proponerla quien la detecte, evaluarla el equipo de arquitectura frente a los Principios Arquitectónicos de este documento, y debe quedar aprobada por escrito por el Supervisor del Centro de Contacto antes de continuar la fase. Si la desviación es lo suficientemente importante como para cambiar el diseño TO-BE mismo (no solo un detalle de implementación), se registra como una nueva ADR siguiendo `procedimiento-cambios.md`.
 
 ## Métricas de gobierno
 

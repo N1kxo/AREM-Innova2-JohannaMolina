@@ -2,7 +2,7 @@
 
 ## 🔖 Cliente
 
-Centro de Contacto (Contact Center) — Universidad de La Sabana. Contacto: Johanna Andrea Molina.
+Centro de Contacto (Contact Center) — Universidad de La Sabana. Contacto: Supervisor del Centro de Contacto Andrea Molin.
 
 ## 👥 Integrantes del equipo
 
@@ -14,7 +14,7 @@ Centro de Contacto (Contact Center) — Universidad de La Sabana. Contacto: Joha
 ```mermaid
 flowchart LR
     subgraph negocio["Negocio"]
-        proc["Gestion de PQRs y tickets\n(Alexander, gestor de casos)"]
+        proc["Gestion de PQRs y tickets\n(Gestor de casos)"]
     end
     subgraph datos["Datos"]
         info["Base de tickets +\nregistro de auditoria de cambios"]

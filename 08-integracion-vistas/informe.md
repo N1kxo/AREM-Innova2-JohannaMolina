@@ -8,7 +8,7 @@ _Taller 8 - Integración de Vistas de Arquitectura (Parte 2 — Aplicación al C
 - Juan David Orozco Rodríguez (davidorozcoj1@gmail.com — GitHub: DavidOrozcoJ)
 
 ## 🧠 Descripción general del trabajo
-Este taller integra, en un solo tablero coherente, las cinco vistas de arquitectura ya construidas en los talleres anteriores para el proceso real del cliente — **gestión y seguimiento de casos PQRSF ("Comuníquese con Nosotros")** del Centro de Contacto de la Universidad de La Sabana (contacto: Johanna Andrea Molina) — mostrando no solo cómo funciona el proceso hoy (AS-IS), sino cómo queda después de aplicar la solución priorizada en el Taller 7 (TO-BE), siguiendo la metodología de 5 pasos de la guía del taller.
+Este taller integra, en un solo tablero coherente, las cinco vistas de arquitectura ya construidas en los talleres anteriores para el proceso real del cliente — **gestión y seguimiento de casos PQRSF ("Comuníquese con Nosotros")** del Centro de Contacto de la Universidad de La Sabana (contacto: Supervisor del Centro de Contacto ) — mostrando no solo cómo funciona el proceso hoy (AS-IS), sino cómo queda después de aplicar la solución priorizada en el Taller 7 (TO-BE), siguiendo la metodología de 5 pasos de la guía del taller.
 
 ## 🔧 Proceso de desarrollo
 Se siguieron los 5 pasos de la guía, tomando como única fuente los entregables ya producidos y versionados por el equipo en los Talleres 0 a 7 (sin inventar elementos nuevos):

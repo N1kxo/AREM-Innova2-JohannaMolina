@@ -8,7 +8,7 @@ Taller 0 - Preliminary y Architecture Vision
 
 ## 📚 Referencias utilizadas
 
-- Molina, J. A. (Centro de Contacto, Universidad de La Sabana). Reunión de levantamiento de información con el equipo de trabajo. Transcripción de la reunión, 19 de agosto de 2026 (documento de referencia interno del equipo).
+- Supervisor del Centro de Contacto, Universidad de La Sabana (Centro de Contacto, Universidad de La Sabana). Reunión de levantamiento de información con el equipo de trabajo. Transcripción de la reunión, 19 de agosto de 2026 (documento de referencia interno del equipo).
 - Guía Paso a Paso: Preliminary y Architecture Vision — repositorio del curso Arquitectura Empresarial, Universidad de La Sabana.
 
 ## 📌 Recomendaciones

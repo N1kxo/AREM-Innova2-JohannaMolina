@@ -9,12 +9,12 @@
         <mxCell id="v2" value="Solicitante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCE6F5;strokeColor=#2E4E8C;fontColor=#1A237E;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="20" width="240" height="80" as="geometry" /></mxCell>
         <mxCell id="v3" value="Facultad / Area
 Responsable" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCE6F5;strokeColor=#2E4E8C;fontColor=#1A237E;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="160" width="240" height="80" as="geometry" /></mxCell>
-        <mxCell id="v4" value="Supervisora" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCE6F5;strokeColor=#2E4E8C;fontColor=#1A237E;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="300" width="240" height="80" as="geometry" /></mxCell>
+        <mxCell id="v4" value="Supervisor del centro de contacto" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCE6F5;strokeColor=#2E4E8C;fontColor=#1A237E;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="300" width="240" height="80" as="geometry" /></mxCell>
         <mxCell id="v5" value="Unidades de la
 Universidad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCE6F5;strokeColor=#2E4E8C;fontColor=#1A237E;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="440" width="240" height="80" as="geometry" /></mxCell>
         <mxCell id="v6" value="Gestion y Auditoria
 de Tickets/PQRs
-(Alexander)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAF5;strokeColor=#222222;fontColor=#111111;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="400" y="60" width="380" height="90" as="geometry" /></mxCell>
+(Gestor de casos)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAF5;strokeColor=#222222;fontColor=#111111;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="400" y="60" width="380" height="90" as="geometry" /></mxCell>
         <mxCell id="v7" value="Base de Datos
 (Excel)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAF5;strokeColor=#222222;fontColor=#111111;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="400" y="280" width="380" height="70" as="geometry" /></mxCell>
         <mxCell id="v8" value="Anexo Unisabana" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5EDE0;strokeColor=#222222;dashed=1;fontColor=#111111;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="900" y="60" width="240" height="70" as="geometry" /></mxCell>

@@ -112,7 +112,7 @@ TO-BE (trabajo futuro)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFF
 <mxCell id="n71" value="Entidad de informacion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="240" y="1325" width="180" height="30" as="geometry"/></mxCell>
 <mxCell id="n72" value="Flecha solida: relacion AS-IS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;fontSize=10;" vertex="1" parent="1"><mxGeometry x="40" y="1365" width="170" height="25" as="geometry"/></mxCell>
 <mxCell id="n73" value="Flecha punteada verde: NUEVO / mitiga" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;fontSize=10;" vertex="1" parent="1"><mxGeometry x="240" y="1365" width="180" height="25" as="geometry"/></mxCell>
-<mxCell id="n74" value="Tablero Integrado - Cliente Real (Centro de Contacto / Johanna Molina) - Hilo: Registro, enrutamiento y cierre de un caso PQRSF" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;align=left;fontSize=12;" vertex="1" parent="1"><mxGeometry x="20" y="-40" width="1640" height="30" as="geometry"/></mxCell>
+<mxCell id="n74" value="Tablero Integrado - Cliente Real (Centro de Contacto) - Hilo: Registro, enrutamiento y cierre de un caso PQRSF" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontStyle=1;align=left;fontSize=12;" vertex="1" parent="1"><mxGeometry x="20" y="-40" width="1640" height="30" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -9,7 +9,7 @@ Me encargué sobre todo de la parte de información e integración: armé la fic
 
 ## Aprendizajes Clave
 
-- Aprendí que en un proceso real la "fuente de verdad" no siempre es el sistema oficial. En el Centro de Contacto el que manda es el Excel paralelo que mantiene Alexander, no Anexo Unisabana, y eso solo lo entendí cuando bajé el proceso a datos en el Taller 2.
+- Aprendí que en un proceso real la "fuente de verdad" no siempre es el sistema oficial. En el Centro de Contacto el que manda es el Excel paralelo que mantiene Gestor de casos, no Anexo Unisabana, y eso solo lo entendí cuando bajé el proceso a datos en el Taller 2.
 - Entendí que las vistas no son diagramas sueltos: el mismo Excel aparecía como riesgo de infraestructura, como activo vulnerable en el STRIDE y como brecha normativa. Cuando lo conecté en el tablero del Taller 8 vi que era una sola debilidad vista desde tres lados.
 - Practiqué tomar decisiones con criterios explícitos. La matriz ponderada del Taller 7 me mostró que la opción con más puntaje (quedarnos en Excel) no era la correcta porque fallaba en lo que más le importaba al cliente, la trazabilidad.
 

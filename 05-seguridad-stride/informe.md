@@ -8,7 +8,7 @@ _Taller 5 - Evaluación de Seguridad con STRIDE_
 - Juan David Orozco Rodríguez (davidorozcoj1@gmail.com — GitHub: DavidOrozcoJ)
 
 ## 🧠 Descripción general del trabajo
-Este taller aplica el marco STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) para analizar los riesgos de seguridad de un flujo crítico del proceso real del cliente: la gestión de casos PQRSF ("Comuníquese con Nosotros") del Centro de Contacto de la Universidad de La Sabana, atendido por Johanna Andrea Molina. Se siguió la metodología de 5 pasos de la guía del taller (DFD → elementos → categorías STRIDE → impacto/mitigación → priorización), completando además la columna de controles existentes con reconocimiento pasivo autorizado, sin ninguna prueba activa contra el sistema real.
+Este taller aplica el marco STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) para analizar los riesgos de seguridad de un flujo crítico del proceso real del cliente: la gestión de casos PQRSF ("Comuníquese con Nosotros") del Centro de Contacto de la Universidad de La Sabana, atendido por Supervisor del Centro de Contacto. Se siguió la metodología de 5 pasos de la guía del taller (DFD → elementos → categorías STRIDE → impacto/mitigación → priorización), completando además la columna de controles existentes con reconocimiento pasivo autorizado, sin ninguna prueba activa contra el sistema real.
 
 ## 🔧 Proceso de desarrollo
 1. Se seleccionó como flujo crítico el **registro y enrutamiento de un caso PQRSF**, por ser el proceso donde ya se habían identificado en los Talleres 1 y 2 los problemas de auditoría, reportes manuales, limitaciones de exportación y falta de alertas de SLA — todos ellos con una lectura directa en términos de seguridad (integridad, repudio y disponibilidad).
@@ -26,7 +26,7 @@ flowchart LR
     usuario(["🧑 Estudiante / Docente / Egresado / Tercero"])
 
     subgraph tenant["Microsoft 365 — Universidad de La Sabana (zona de confianza)"]
-        p1["P1: Registro del caso<br/>(Gestor de casos — Alexander)"]
+        p1["P1: Registro del caso<br/>(Gestor de casos)"]
         p2["P2: Transcripción / actualización<br/>manual del seguimiento"]
         p3["P3: Enrutamiento a<br/>Unidad Responsable"]
         d1[("D1: Anexo Unisabana<br/>(ticketing)")]
@@ -59,7 +59,7 @@ El análisis conecta directamente cada amenaza con un problema ya reportado por 
 
 ### Qué supuestos se tomaron
 - Se asume que el acceso al Excel compartido y a Anexo Unisabana está limitado al tenant institucional de Microsoft 365 (no expuesto públicamente en internet), por ser la configuración estándar de estas herramientas y no haberse identificado lo contrario en el reconocimiento pasivo.
-- Se asume que el "gestor de casos" (Alexander) es hoy el único punto de registro manual, según lo documentado en los talleres previos.
+- Se asume que el gestor de los casos es hoy el único punto de registro manual, según lo documentado en los talleres previos.
 - No se tuvo acceso a credenciales ni a la configuración interna real de permisos del archivo Excel o de Anexo Unisabana; las columnas de controles existentes se basan en el comportamiento estándar de estas herramientas dentro de Microsoft 365 y en lo verificable públicamente, no en una auditoría interna.
 
 ## 📈 Diagrama final entregado
@@ -70,7 +70,7 @@ El análisis conecta directamente cada amenaza con un problema ya reportado por 
 | Nombre del elemento | Tipo | Descripción | Responsable |
 |---|---|---|---|
 | Estudiante / Docente / Egresado / Tercero | Actor externo | Radica o consulta un caso PQRSF por correo, WhatsApp, llamada, sitio web o app | Usuario del servicio |
-| Gestor de casos (Alexander) | Proceso | Registra el caso en Anexo Unisabana y lo transcribe al Excel compartido | Centro de Contacto |
+| Gestor de casos | Proceso | Registra el caso en Anexo Unisabana y lo transcribe al Excel compartido | Centro de Contacto |
 | Anexo Unisabana | Almacén de datos | Plataforma de ticketing oficial; no exporta todos los campos requeridos | Equipo TI |
 | Excel compartido (Excel Online / SharePoint) | Almacén de datos | Fuente de verdad real del seguimiento de casos, dentro de Microsoft 365 | Centro de Contacto / Equipo TI |
 | Unidad Responsable / Facultad | Actor interno | Recibe el caso asignado y actualiza su estado | Facultades / Unidades académicas |

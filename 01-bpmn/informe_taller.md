@@ -13,7 +13,7 @@ El objetivo de esta entrega fue modelar en BPMN un proceso real del cliente asig
 ## 🔧 Proceso de desarrollo
 Se siguió la metodología de 5 pasos de la guía del taller, ajustada tras la retroalimentación de clase para alinear los carriles y la lógica de enrutamiento con el análisis presentado:
 
-1. **Actores (carriles)**: se ajustaron a cuatro carriles — **Solicitante**, **Sistema** (Unísabana Anexo / Excel Online + Power Automate), **Gestor de Casos** (Alexander) y **Área / Facultad** — nomenclatura alineada con la presentada en clase, en vez de nombrar los carriles con nombres propios sueltos.
+1. **Actores (carriles)**: se ajustaron a cuatro carriles — **Solicitante**, **Sistema** (Unísabana Anexo / Excel Online + Power Automate), **Gestor de Casos**  y **Área / Facultad** — nomenclatura alineada con la presentada en clase, en vez de nombrar los carriles con nombres propios sueltos.
 2. **Inicio y fin**: el proceso inicia cuando el usuario radica un caso por cualquiera de los canales disponibles, y termina en el evento "Caso cerrado", después de que el sistema registra automáticamente el cambio en el historial de auditoría.
 3. **Actividades**: revisar casos nuevos, clasificar el caso, resolver directamente o redirigir según el nivel, atender y responder, registrar la respuesta y actualizar el estado.
 4. **Gateways**: se reforzó el punto de enrutamiento por nivel de reporte como una **compuerta XOR explícita** de tres salidas mutuamente excluyentes (Nivel 1, Nivel 2, Nivel 3) — antes este cálculo estaba implícito dentro de una tarea del sistema; ahora es una decisión de negocio visible en el modelo, como se explicó en la sesión de clase ("un ticket solo puede pertenecer a un nivel a la vez").
@@ -41,7 +41,7 @@ Ver [`modelo-final.drawio`](modelo-final.drawio).
 | Nombre del elemento | Tipo | Descripción | Responsable |
 |---|---|---|---|
 | Solicitante | Actor | Estudiante, profesor, administrativo o público externo que radica el caso | Cliente |
-| Gestor de Casos (Alexander) | Actor | Revisa, clasifica, enruta y da trazabilidad a cada caso | Cliente |
+| Gestor de Casos | Actor | Revisa, clasifica, enruta y da trazabilidad a cada caso | Cliente |
 | Área / Facultad | Actor | Atiende y responde de fondo los casos de Nivel 2 y Nivel 3 | Cliente |
 | Unísabana Anexo / Excel Online + Power Automate | Sistema | Herramienta de tickets y repositorio donde se calculan plazos, se enrutan casos y se generan alertas y auditoría | Cliente / Dirección de Tecnología |
 | Compuerta XOR "¿Qué nivel de reporte aplica?" | Gateway | Enruta el caso de forma excluyente a Nivel 1, 2 o 3 según su gravedad | Sistema propuesto |
