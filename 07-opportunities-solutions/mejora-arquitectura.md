@@ -1,7 +1,7 @@
 # Mejora de Arquitectura (TO-BE) — Identificación y Priorización de Mejoras
 
 ## Cliente
-Centro de Contacto, Universidad de La Sabana — proceso de gestión de PQRSF ("Comuníquese con Nosotros"). Contacto: Johanna Andrea Molina, Supervisora del Centro de Contacto.
+Centro de Contacto, Universidad de La Sabana — proceso de gestión de PQRSF ("Comuníquese con Nosotros"). Contacto: Supervisor del Centro de Contacto.
 
 ## Integrantes del equipo
 - Nicolas Esteban Muñoz Sendoya (nico9ms@hotmail.com — GitHub: N1kxo)
@@ -21,7 +21,7 @@ Centro de Contacto, Universidad de La Sabana — proceso de gestión de PQRSF ("
 |---|---|
 | Servidor de Anexo Unisabana como instancia única on-premise, sin evidencia de plan de continuidad | Taller 4 |
 | Excel compartido sin control de versiones | Taller 4 |
-| El gestor de casos (Alexander) es un único punto de falla operativo para los 3 canales manuales | Taller 4 |
+| El gestor de casos es un único punto de falla operativo para los 3 canales manuales | Taller 4 |
 | T2/T3 (Tampering/Repudiation) — el Excel no registra quién ni cuándo modifica un caso | Taller 5 |
 | T4 (Information Disclosure) — el Excel es el único repositorio de datos personales/sensibles del proceso | Taller 5 |
 | T5 (Denial of Service) — ausencia de alertas tempranas de SLA | Taller 5 |
@@ -63,7 +63,7 @@ Las ideas #2 (automatizar exportación de Anexo Unisabana), #3 (alertas de SLA) 
 
 **Paso 1 — Problema en términos de impacto:** "El Excel compartido es la única fuente de verdad de los casos PQRSF, y ningún cambio a un caso queda con autor ni fecha: ante una auditoría interna ISO 9001 o un reclamo de un titular por Ley 1581 (Habeas Data), la Universidad no puede demostrar quién modificó un caso, cuándo, ni si hubo acceso indebido a datos sensibles (salud, disciplinarios) contenidos en él."
 
-**Paso 2 — Último momento responsable:** el equipo no tuvo acceso a una fecha de auditoría ISO 9001 comunicada por el cliente — se deja como limitación explícita y como pregunta pendiente para Johanna Molina. Se recomienda decidir dentro de este semestre, para que el siguiente corte de auditoría ya cuente con trazabilidad.
+**Paso 2 — Último momento responsable:** el equipo no tuvo acceso a una fecha de auditoría ISO 9001 comunicada por el cliente — se deja como limitación explícita y como pregunta pendiente para el Supervisor del Centro de Contacto . Se recomienda decidir dentro de este semestre, para que el siguiente corte de auditoría ya cuente con trazabilidad.
 
 **Paso 3 — Criterios y pesos** (pesos propuestos por el equipo a falta de validación directa con el negocio — pendiente de confirmar con la Dirección de TI y el Centro de Contacto):
 
@@ -82,7 +82,7 @@ Las ideas #2 (automatizar exportación de Anexo Unisabana), #3 (alertas de SLA) 
 | B | Migrar el Consolidado a una **Lista de SharePoint** (versionado nativo por elemento, permisos por columna, alertas automáticas) |
 | C | Migrar a **Microsoft Dataverse/Power Apps** (formulario a medida, auditoría nativa, control de acceso granular) |
 
-**Paso 5 — Consejo de quien sabe y a quien le afecta:** no se tuvo acceso directo a la Dirección de TI ni a Alexander (gestor de casos) para este ejercicio académico — se asume, como **supuesto explícito a confirmar**, que la licencia M365 ya contratada por la Universidad incluye SharePoint y Power Automate en su plan básico (evidencia indirecta: el equipo ya usa SharePoint y Teams hoy), pero que Dataverse/Power Apps premium probablemente requiere licenciamiento adicional no confirmado.
+**Paso 5 — Consejo de quien sabe y a quien le afecta:** no se tuvo acceso directo a la Dirección de TI ni a Gestor de casos para este ejercicio académico — se asume, como **supuesto explícito a confirmar**, que la licencia M365 ya contratada por la Universidad incluye SharePoint y Power Automate en su plan básico (evidencia indirecta: el equipo ya usa SharePoint y Teams hoy), pero que Dataverse/Power Apps premium probablemente requiere licenciamiento adicional no confirmado.
 
 **Paso 6 — Puntuación:**
 

@@ -9,13 +9,13 @@
         <mxCell id="a1" value="Solicitante&#10;(estudiante, profesor, administrativo&#10;o público externo)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="40" y="20" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="a2" value="Alexander&#10;(Gestor de Casos)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="a2" value="Gestor de casos&#10;(Gestor de Casos)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="40" y="150" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="a3" value="Unidad Responsable / Facultad&#10;(atiende Nivel 2 y Nivel 3)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="40" y="280" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="a4" value="Johanna&#10;(Supervisora del Centro de Contacto)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="a4" value="Supervisor del Centro de Contacto&#10;(Supervisor del Centro de Contacto)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="40" y="410" width="200" height="80" as="geometry" />
         </mxCell>
 

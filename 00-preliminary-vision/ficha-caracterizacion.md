@@ -9,7 +9,7 @@
 
 - **Nombre de la empresa o entidad:** Centro de Contacto (Contact Center) — Universidad de La Sabana
 - **Sector económico:** Educación superior — servicios institucionales de atención a la comunidad universitaria
-- **Número de empleados / usuarios / clientes:** Un gestor de casos (Alexander) y la supervisora del área gestionan las solicitudes de toda la comunidad universitaria (estudiantes, profesores, administrativos y público externo)
+- **Número de empleados / usuarios / clientes:** Un gestor de casos y el supervisor del área gestionan las solicitudes de toda la comunidad universitaria (estudiantes, profesores, administrativos y público externo)
 - **Ubicación principal (física o digital):** Universidad de La Sabana; atención a través de correo electrónico, WhatsApp, llamadas, el sitio web institucional y la app Unisabana
 - **Tecnologías principales actuales:** Plataforma de tickets Anexo Unisabana, base de datos en Excel, suite Microsoft 365
 

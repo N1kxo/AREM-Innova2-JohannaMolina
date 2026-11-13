@@ -21,7 +21,7 @@ Se aplicaron las dos metodologías de 4 pasos de la guía del taller:
 
 **Diagrama de contexto:**
 1. Se identificó al Usuario/Solicitante como el único actor externo al límite organizacional, y a Microsoft 365 (Teams/Correo) como sistema de terceros.
-2. Se identificaron los sistemas y actores internos: Alexander, la Unidad Responsable, la Jefatura de Calidad, Unísabana Anexo, el sistema propuesto de gestión de casos y el módulo de reportes.
+2. Se identificaron los sistemas y actores internos: Gestor de caso, la Unidad Responsable, la Jefatura de Calidad, Unísabana Anexo, el sistema propuesto de gestión de casos y el módulo de reportes.
 3. Se trazaron los flujos de información entre todos los elementos.
 4. Se etiquetó cada flujo con la información que transporta y se dibujó el límite organizacional para separar lo interno de lo externo, marcando el sistema de terceros con borde punteado.
 
@@ -30,11 +30,11 @@ Ambos diagramas se generaron de forma programática en Python como archivos `.dr
 ## 🧩 Análisis del modelo propuesto
 El ERD traduce en estructura de datos los dos problemas que la cliente priorizó: la entidad **HistorialCambios** resuelve la falta de trazabilidad (quién modificó qué campo y cuándo, exigida por el sistema de calidad ISO 9001), y la entidad **Reapertura** modela explícitamente el ciclo de vida real de un caso, que puede regresar a la unidad responsable si el usuario no queda conforme con la respuesta.
 
-El diagrama de contexto, por su parte, hace explícito un límite organizacional que agrupa a Alexander, la Unidad Responsable, la Jefatura de Calidad y los sistemas internos, dejando fuera únicamente al Usuario/Solicitante (actor externo) y a Microsoft 365 (sistema de terceros, marcado con borde punteado) — esta distinción retoma un detalle que la cliente mencionó en la reunión: la universidad restringe el uso de aplicaciones no institucionales y solo permite trabajar dentro del conjunto Microsoft, por lo que cualquier módulo de notificaciones debía apoyarse en Teams/Outlook y no en una herramienta externa nueva.
+El diagrama de contexto, por su parte, hace explícito un límite organizacional que agrupa al Gestor de casos, la Unidad Responsable, la Jefatura de Calidad y los sistemas internos, dejando fuera únicamente al Usuario/Solicitante (actor externo) y a Microsoft 365 (sistema de terceros, marcado con borde punteado) — esta distinción retoma un detalle que la cliente mencionó en la reunión: la universidad restringe el uso de aplicaciones no institucionales y solo permite trabajar dentro del conjunto Microsoft, por lo que cualquier módulo de notificaciones debía apoyarse en Teams/Outlook y no en una herramienta externa nueva.
 
 **Supuestos tomados:**
 - Se asume que todas las relaciones del ERD son 1:N; no se identificaron relaciones N:N en la descripción de la cliente, por lo que no fue necesario introducir entidades asociativas adicionales.
-- Se asume que Alexander, la Unidad Responsable y la Jefatura de Calidad son actores internos a la organización (aunque externos al software), siguiendo el mismo criterio que el caso base usó para clasificar al Asistente Administrativo.
+- Se asume que Gestor de casos, la Unidad Responsable y la Jefatura de Calidad son actores internos a la organización (aunque externos al software), siguiendo el mismo criterio que el caso base usó para clasificar al Asistente Administrativo.
 - El módulo de Reportes se modeló como un sistema interno que consume los datos del sistema central, sin detallar su lógica interna de generación, ya que a ese nivel de detalle corresponde a un diagrama de componentes fuera del alcance de este taller.
 
 ## 📈 Diagrama final entregado

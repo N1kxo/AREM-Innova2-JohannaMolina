@@ -9,13 +9,13 @@
         <mxCell id="a1" value="Solicitante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="20" y="40" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="a2" value="Alexander&#10;(Gestor de Casos)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="a2" value="Gestor de casos&#10;(Gestor de Casos)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="20" y="360" width="160" height="70" as="geometry" />
         </mxCell>
         <mxCell id="a3" value="Unidad Responsable&#10;/ Facultad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="20" y="620" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="a4" value="Johanna&#10;(Supervisora)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="a4" value="Supervisor del Centro de Contacto&#10;(Supervisor del Centro de Contacto)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="20" y="880" width="160" height="70" as="geometry" />
         </mxCell>
 

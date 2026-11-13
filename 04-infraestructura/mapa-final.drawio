@@ -12,13 +12,13 @@
         <mxCell id="cli1" value="📱 Dispositivo del Solicitante&#10;(navegador, app, teléfono, WhatsApp)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="70" y="80" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cli2" value="⚠️ Alexander&#10;PC del Contact Center&#10;(único que registra 3 canales manuales)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="cli2" value="⚠️ Gestor de casos&#10;PC del Contact Center&#10;(único que registra 3 canales manuales)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c0392b;strokeColor=#7b1f1f;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="70" y="220" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="cli3" value="💻 Unidad Responsable / Facultad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="70" y="370" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cli4" value="💻 Johanna&#10;PC Supervisora" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="cli4" value="💻 Supervisor del Centro de Contacto&#10;PC del Supervisor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0b4884;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="70" y="510" width="200" height="80" as="geometry" />
         </mxCell>
 
