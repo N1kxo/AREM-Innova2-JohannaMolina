@@ -51,4 +51,4 @@ Todo el análisis que sustenta esta propuesta está documentado carpeta por carp
 
 ## 👥 Contacto
 
-Johanna Andrea Molina, johannaMR@unisabana.edu.co
+Equipo Innova2 — GitHub: N1kxo, DavidOrozcoJ. Los datos de contacto del cliente están en la ficha de caracterización (`00-preliminary-vision/ficha-caracterizacion.md`), con su autorización.

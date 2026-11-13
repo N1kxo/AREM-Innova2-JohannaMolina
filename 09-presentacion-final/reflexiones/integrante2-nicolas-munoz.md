@@ -1,4 +1,3 @@
-<!-- Pendiente: esta reflexión la escribe Nicolás. Es la plantilla oficial sin diligenciar. -->
 # Reflexión Individual
 
 ## Nombre del Estudiante
